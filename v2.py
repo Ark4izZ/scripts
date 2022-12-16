@@ -111,7 +111,7 @@ class QK:
 
     def get_free_course_list(self):
         list_data = {
-            "searchtj": self.config_into[2],
+            "searchtj": self.config_info[2],
             "xq": "0",
             "jc": "0",
             "kclbdm": ""
@@ -129,7 +129,7 @@ class QK:
 
     def get_course(self,course):
         print("课程：" + course['kcm']+" 课序号"+str(course['kxh']) + " 教师：" + course['skjs'] + " 课余量" + str(course['bkskyl']))
-        if course['bkskyl'] > 0 and self.config_into[3] == course['kch'] and self.config_into[4] == course['kxh']:
+        if course['bkskyl'] > 0 and self.config_info[3] == course['kch'] and self.config_info[4] == course['kxh']:
             kcm = course['kcm']
             kch = course['kch']
             kxh = course['kxh']
