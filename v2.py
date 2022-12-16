@@ -75,8 +75,8 @@ class QK:
 
     def login(self):
         login_data = {
-            "j_username": '2020141530041',
-            "j_password": hashlib.md5('192537'.encode()).hexdigest(),
+            "j_username": '',
+            "j_password": hashlib.md5(''.encode()).hexdigest(),
             "j_captcha": self.get_captcha(self.url_captcha),
             "tokenValue": self.get_token()
         }
