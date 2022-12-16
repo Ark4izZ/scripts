@@ -36,7 +36,7 @@ class QK:
         self.course_selecting_url = "http://zhjw.scu.edu.cn/student/courseSelect/selectCourse/checkInputCodeAndSubmit"
 
         self.session= requests.session()
-        self.config_into = []
+        self.config_info = []
         self.course_select = []
         self.free_course = []
         self.getConfig()
@@ -52,7 +52,7 @@ class QK:
     def getConfig(self):
         with open('config.txt', 'r',  encoding='utf-8') as f:
             for line in f.readlines():
-                self.config_into.append(line.strip())
+                self.config_info.append(line.strip())
 
     def get_token(self):
         res=self.session.get(url=self.url_index, headers=self.headers).content.decode()
@@ -75,8 +75,8 @@ class QK:
 
     def login(self):
         login_data = {
-            "j_username": '',
-            "j_password": hashlib.md5(''.encode()).hexdigest(),
+            "j_username": self.config_info[0],
+            "j_password": hashlib.md5(self.config_info[1].encode()).hexdigest(),
             "j_captcha": self.get_captcha(self.url_captcha),
             "tokenValue": self.get_token()
         }
