@@ -1,0 +1,48 @@
+{
+    "wait":[3, 8],
+    "last_status": {
+        "name": "",
+        "page": 1,
+        "uid": "3689493785"
+    },
+    "key_word": "乌",
+    "uid_list": [
+        "3689493785",
+        "6992976169",
+        "7753345675",
+        "7458803632",
+        "5949120156"
+    ],
+    "headers": {
+        "cookies": {
+            "UOR": "www.google.com,weibo.com,www.google.com",
+            "SINAGLOBAL": "69661757485075197",
+            "ULV": "1668836451395:9:98836451314:1668676684118",
+            "PC_TOKEN": "f9cbfd8eff",
+            "SUBP": "0033WrSXqPxfM725Ws9jqgMJpX5KMhUgL.FoqpeK-4eoqcSo-2dJLoI7yNUNM_9s8XqBtt",
+            "ALF": "1700530224",
+            "SSOLoginState": "1668994226",
+            "SCF": "AvdGO91vd4Em-689kt8-puGwV9ZybkbDTwlErtlSig7dMQ1hy2ie8-GaxIhjRxSfkBTxYV4wUdaMxvKC73Y.",
+            "SUB": "_2A25OfqTjDeRhmtAKLXbkkW9NRAKiXo4-ld-PE926UDbqwIY_1",
+            "XSRF-TOKEN": "ISkpr_wiIVOLr_oEad18GM5V",
+            "WBPSESS": "sjwj-ekA2wA2yELzu6XPr3kkA3Dr4b4vNU2cYLsKawquWM7QxeHojUbFyP8T9ODw8CocVUasGcMgzZyObAAtf1MME2MWVx6frRVF2w=="
+        },
+        "header": {
+            "authority": "weibo.com",
+            "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+            "accept-language": "zh-CN,zh;q=0.9,es;q=0.8",
+            "cache-control": "no-cache",
+            "pragma": "no-cache",
+            "referer": "https://login.sina.com.cn/",
+            "sec-ch-ua": "'Chromium;v='106', Google Chrome;v='106', Not;A=Brand;v='99'",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "Windows",
+            "sec-fetch-dest": "document",
+            "sec-fetch-mode": "navigate",
+            "sec-fetch-site": "same-origin",
+            "sec-fetch-user": "?1",
+            "upgrade-insecure-requests": "1",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36"
+        }
+    }
+}
