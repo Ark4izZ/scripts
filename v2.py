@@ -166,7 +166,7 @@ class QK:
             count += 1
             # 1.查询是否已经选中
             self.check_if_course_select()
-            if self.config_into[2] in self.course_select:
+            if self.config_info[2] in self.course_select:
                 print("您已经选中这门课了！")
                 exit()
 
