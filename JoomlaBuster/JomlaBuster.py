@@ -85,7 +85,7 @@ class Joomla():
             res = requests.get(self.url,proxies=self.proxy, cookies=self.cookies, headers=headers)
             hidden = re.findall("<input type=\"hidden\" name=\"(.*)\" value=\"(.*)\"", res.text)
             # [('option', 'com_login'), ('task', 'login'), ('return', 'aW5kZXgucGhw'), ('c9496f3f374b3239bc01ae9b83c4fdd4', '1')]
-            self.ret = hidden[0][1]
+            self.option = hidden[0][1]
             self.task = hidden[1][1]
             self.ret = hidden[2][1]
             self.csrf = hidden[3][0]
