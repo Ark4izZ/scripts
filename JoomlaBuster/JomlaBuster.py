@@ -80,6 +80,7 @@ class Joomla():
                 "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
                 "Accept-Language": "zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2"
             }
+	    password=password.decode('utf-8')
 			# first get for ret and csrf
             res = requests.get(self.url,proxies=self.proxy, cookies=self.cookies, headers=headers)
             hidden = re.findall("<input type=\"hidden\" name=\"(.*)\" value=\"(.*)\"", res.text)
