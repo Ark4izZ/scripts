@@ -100,8 +100,11 @@ class Joomla():
             res2 = requests.post(self.url, data =data, proxies=self.proxy,cookies=self.cookies,headers=headers)
             if self.verbose:
                 print(f'testing {self.username} : {password}')
-            msg = re.findall('<div class="alert-message">(.*)</div>', res2.text)[0]
-            # login failed
+	    try:
+            	msg = re.findall('<div class="alert-message">(.*)</div>', res2.text)[0]
+            except IndexError:
+		msg=""
+	    # login failed
             if 'Username and password do not match' in msg:
                 if self.verbose:
                     print(f'{bcolors.FAIL} {self.username}:{password}{bcolors.ENDC}')
